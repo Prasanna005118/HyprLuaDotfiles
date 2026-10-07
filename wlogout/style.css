@@ -1,0 +1,103 @@
+@import "colors.css";
+
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    font-family: "JetBrainsMono Nerd Font Mono", monospace;
+    font-size: 12pt;
+
+    color: @foreground;
+    background-color: alpha(@background, 0.90);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+
+    font-size: 40px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    border: none;
+    border-radius: 20px;
+
+    color: @primary;
+    text-shadow: none;
+
+    background-color: transparent;
+
+    margin: 1px;
+
+    transition:
+        background-color 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: alpha(@hover, 0.30);
+}
+
+button:focus {
+    outline: none;
+    background-color: alpha(@hover, 0.30);
+}
+
+
+/* ==============================
+   LOCK
+   ============================== */
+
+#lock {
+    background-image: url("icons/lock.png");
+    background-size: 65%;
+}
+
+
+/* ==============================
+   LOGOUT
+   ============================== */
+
+#logout {
+    background-image: url("icons/logout.png");
+}
+
+
+/* ==============================
+   SUSPEND
+   ============================== */
+
+#suspend {
+    background-image: url("icons/sleep.png");
+}
+
+
+/* ==============================
+   SHUTDOWN
+   ============================== */
+
+#shutdown {
+    background-image: url("icons/power.png");
+}
+
+
+/* ==============================
+   REBOOT
+   ============================== */
+
+#reboot {
+    background-image: url("icons/restart.png");
+}
+
+
+/* ==============================
+   HIBERNATE
+   ============================== */
+
+#hibernate {
+    background-image: url("icons/hibernate.png");
+}

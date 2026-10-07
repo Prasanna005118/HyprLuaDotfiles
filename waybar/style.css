@@ -1,0 +1,123 @@
+@import "colors/colors.css";
+
+* {
+    all: unset;
+    font-family: "Iosevka Nerd Font Mono", monospace;
+}
+
+window#waybar {
+    background-color: @bg0;
+    color: @fg;
+    border-radius: 0 0 10px 10px;
+}
+
+/* =========================
+   WORKSPACES
+   ========================= */
+
+#workspaces {
+    min-width: 100px;
+    padding: 2px 4px;
+    margin: 11px 0;
+    border-radius: 99px;
+}
+
+#workspaces button {
+    background-color: @bg4;
+    color: transparent;
+
+    font-size: 0;
+
+    min-width: 16px;
+    min-height: 2px;
+
+    padding: 0;
+    margin: 0 3px;
+
+    border-radius: 99px;
+}
+
+#workspaces button.active {
+    background-color: @blue;
+
+    font-size: 7;
+
+    min-width: 28px;
+    min-height: 2px;
+
+    padding: 0;
+}
+
+/* =========================
+   CLOCK
+   ========================= */
+
+#clock,
+#clock#right {
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   MODULE CONTAINERS
+   ========================= */
+
+.modules-left {
+    margin-left: 12px;
+    margin-right: 14px;
+}
+
+.modules-right {
+    margin-right: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   CAVA
+   ========================= */
+
+#cava {
+    margin: 0 18px;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    color: @orange;
+}
+
+
+/* =========================
+   NETWORK / WIFI
+   ========================= */
+
+#network {
+    margin-left: 12px;
+    margin-right: 12px;
+
+    color: @purple;
+    font-size: 1.15rem;
+}
+
+
+/* =========================
+   BATTERY
+   ========================= */
+
+#battery {
+    margin-left: 12px;
+    margin-right: 12px;
+
+    font-size: 1.15rem;
+    min-width: 85px;
+}
+
+
+/* =========================
+   PULSEAUDIO
+   ========================= */
+
+#pulseaudio {
+    color: @yellow;
+    font-size: 1.05rem;
+}
